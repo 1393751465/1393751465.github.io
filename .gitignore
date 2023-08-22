@@ -1,0 +1,12 @@
+# 忽略临时文件
+*.tmp
+*.log
+
+# 忽略构建产物和依赖
+/node_modules
+/build
+/dist
+
+# 忽略敏感信息
+config.json
+secrets.txt
