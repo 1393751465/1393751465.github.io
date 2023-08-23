@@ -1,5 +1,5 @@
 module.exports = {
-    base: "/freezeFish.github.io/",
+    // base: "/docs/",
     lang: "zh-CN",
     title: "前端的设计模式系列",
     description: "前端的设计模式系列 by windliang",
