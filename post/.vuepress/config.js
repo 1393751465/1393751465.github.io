@@ -2,6 +2,12 @@ module.exports = {
     lang: "zh-CN",
     title: "前端的设计模式系列",
     description: "前端的设计模式系列 by windliang",
+
+    configureWebpack: {
+        output: {
+          publicPath: '/docs', // 或其他你想要的路径
+        },
+    },
     theme: "@qcyblm/vpx",
     themeConfig: {
         search: false,
