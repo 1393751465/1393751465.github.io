@@ -1,18 +1,13 @@
 module.exports = {
+    base: "/freezeFish.github.io/",
     lang: "zh-CN",
     title: "前端的设计模式系列",
     description: "前端的设计模式系列 by windliang",
-
-    configureWebpack: {
-        output: {
-          publicPath: '/docs', // 或其他你想要的路径
-        },
-    },
     theme: "@qcyblm/vpx",
     themeConfig: {
         search: false,
         nav: [
-            { text: "Home", link: "/", icon: "fa fa-home" },
+            { text: "Home", link: "./", icon: "fa fa-home" },
             {
                 text: "极客时间/掘金优惠",
                 link: "https://coursesub.top/",
@@ -28,11 +23,11 @@ module.exports = {
                 children: [
                     {
                         title: "单例模式",
-                        path: "/test",
+                        path: "./test",
                     },
                     {
                         title: "建造者模式",
-                        path: "/test",
+                        path: "./test",
                     },
                 ],
             },
