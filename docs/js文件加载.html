@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>小可爱的找工作日记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="小可爱的找工作日记">
+    
+    <link rel="preload" href="/freezeFish/assets/css/0.styles.76db12fb.css" as="style"><link rel="preload" href="/freezeFish/assets/js/app.e7247cd4.js" as="script"><link rel="preload" href="/freezeFish/assets/js/2.7c976e6c.js" as="script"><link rel="preload" href="/freezeFish/assets/js/1.397e4a68.js" as="script"><link rel="preload" href="/freezeFish/assets/js/26.9230b41a.js" as="script"><link rel="prefetch" href="/freezeFish/assets/js/10.b1c5e55b.js"><link rel="prefetch" href="/freezeFish/assets/js/11.e42b5eed.js"><link rel="prefetch" href="/freezeFish/assets/js/12.0a05ed8f.js"><link rel="prefetch" href="/freezeFish/assets/js/13.1e1a2085.js"><link rel="prefetch" href="/freezeFish/assets/js/14.f1f03a92.js"><link rel="prefetch" href="/freezeFish/assets/js/15.55121271.js"><link rel="prefetch" href="/freezeFish/assets/js/16.054ede33.js"><link rel="prefetch" href="/freezeFish/assets/js/17.c110fc24.js"><link rel="prefetch" href="/freezeFish/assets/js/18.5ad5413a.js"><link rel="prefetch" href="/freezeFish/assets/js/19.2e88270f.js"><link rel="prefetch" href="/freezeFish/assets/js/20.796e53c5.js"><link rel="prefetch" href="/freezeFish/assets/js/21.065a7273.js"><link rel="prefetch" href="/freezeFish/assets/js/22.23821af0.js"><link rel="prefetch" href="/freezeFish/assets/js/23.5ed9724d.js"><link rel="prefetch" href="/freezeFish/assets/js/24.0ed838f6.js"><link rel="prefetch" href="/freezeFish/assets/js/25.ce0e21cd.js"><link rel="prefetch" href="/freezeFish/assets/js/27.61fe2a16.js"><link rel="prefetch" href="/freezeFish/assets/js/28.d1d5e8eb.js"><link rel="prefetch" href="/freezeFish/assets/js/3.89a19585.js"><link rel="prefetch" href="/freezeFish/assets/js/4.b3c82c4f.js"><link rel="prefetch" href="/freezeFish/assets/js/5.409569b9.js"><link rel="prefetch" href="/freezeFish/assets/js/8.8ee7f5b5.js"><link rel="prefetch" href="/freezeFish/assets/js/9.15efb21f.js"><link rel="prefetch" href="/freezeFish/assets/js/vendors~docsearch.b7094f9e.js">
+    <link rel="stylesheet" href="/freezeFish/assets/css/0.styles.76db12fb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/freezeFish/" class="home-link router-link-active"><!----> <span class="site-name">小可爱的找工作日记</span></a> <nav class="links"><!----> <ul class="nav-links can-hide"><li class="nav-item"><a href="/freezeFish/" class="nav-link"><i class="fa fa-home"></i> <span>Home</span></a></li> <!----></ul> <div class="theme-switcher"><a class="switch light"><span><i aria-hidden="true" class="fa fa-sun"></i></span></a></div></nav></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!----> <ul class="nav-links"><li class="nav-item"><a href="/freezeFish/" class="nav-link"><i class="fa fa-home"></i> <span>Home</span></a></li> <!----></ul>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><i></i> <span>八股</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/freezeFish/八股.html" class="sidebar-link">八股1</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><i></i> <span>有趣的面试问题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/freezeFish/js文件加载.html" class="active sidebar-link">js文件的加载顺序</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-vpx-content content__default"><p>昨天面试百度遇到一个比较有趣的问题，js文件之间存在依赖关系，那么加载的时候，加载顺序是什么样子的。</p> <p>后续仔细考虑了这个小算法，这不就是拓扑排序，</p> <p>我们在一开始学习js语法的时候，大概都会学到不同的依赖文件是如何去加载的。核心的思想就是先加载不被其他文件的依赖，然后加载那些依赖已经加载的文件，以此类推。</p> <p>比如说：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> dependencies <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string-property property">'index.js'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'1.js'</span><span class="token punctuation">,</span> <span class="token string">'2.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'2.js'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'1.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'1.js'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>上面的这个数据结构描述了，index.js 文件是依赖于1.js 2.js， 而2.js依赖于1.js</p> <p>那么加载的时候，加载顺序就是 1.js 2.js index.js</p> <p>简单来说就是获取依赖树（或者依赖图）的拓扑排序</p> <div class="language- extra-class"><pre class="language-text"><code>// 那么我们从获取拓扑序列的思路来解决这道题
+const dependencies = {
+    'index.js': ['1.js', '2.js'],
+    '2.js': ['1.js'],
+    '1.js': [],
+  };
+
+function getTopo(dependencies){
+    let dep = dependencies
+    let res = new Set()
+
+    while(Object.keys(dep).length!==0){
+    		//遍历查找入度为0的节点，也就是不依赖于其他的文件的js
+        Object.keys(dep).forEach(key=&gt;{            
+            if(dep[key].length==0){
+            		//加到集合里面
+                res.add(key)
+                //删除这个文件，并且删除其他文件对该文件的依赖
+                delete dep[key]
+                var deleteKey = key
+                Object.keys(dep).forEach(key =&gt;{
+                    const indexOfKey = dep[key].indexOf(deleteKey);
+                    if (indexOfKey !== -1) {
+                        dep[key].splice(indexOfKey, 1); 
+                    }
+                })
+            }
+        })
+        
+        // 重复上述过程，直到dependencies为空
+    }
+
+    console.log(res)
+}
+
+</code></pre></div><p>这样的纯暴力的解法，复杂度太高了，有没有更好的算法？ 有！！</p> <p>我们可以看成是对一个依赖树的遍历，我们不考虑重复问题</p> <div class="language- extra-class"><pre class="language-text"><code>/ 用于存储已加载的文件的集合
+const loadedFiles = new Set();
+
+// 定义加载文件的函数
+function loadFile(fileName) {
+// 如果文件已加载，则直接返回
+if (loadedFiles.has(fileName)) {
+    return;
+}
+
+// 获取文件的依赖项列表
+const fileDependencies = dependencies[fileName];
+
+// 递归加载依赖项
+fileDependencies.forEach(dependency =&gt; {
+    loadFile(dependency);
+});
+
+// 模拟加载文件的操作，可以在这里执行实际的加载操作
+console.log(`加载文件: ${fileName}`);
+
+// 将文件标记为已加载
+loadedFiles.add(fileName);
+}
+
+// 加载入口文件
+// loadFile('index.js');
+
+
+
+</code></pre></div><p>妙</p></div> <!----> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/freezeFish/八股.html" class="prev">
+        八股1
+      </a></span> <!----></p></div> <!----> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/freezeFish/assets/js/app.e7247cd4.js" defer></script><script src="/freezeFish/assets/js/2.7c976e6c.js" defer></script><script src="/freezeFish/assets/js/1.397e4a68.js" defer></script><script src="/freezeFish/assets/js/26.9230b41a.js" defer></script>
+  </body>
+</html>

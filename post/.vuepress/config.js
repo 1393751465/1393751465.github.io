@@ -20,6 +20,16 @@ module.exports = {
                     },
                 ],
             },
+            {
+                title: "有趣的面试问题",
+                collapsable: false, // 不折叠
+                children: [
+                    {
+                        title: "js文件的加载顺序",
+                        path: "/js文件加载",
+                    },
+                ],
+            }
             
         ],
     },
